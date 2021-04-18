@@ -205,6 +205,10 @@ a{
     margin-bottom: 1em;
 }
 
+.footer__copyright{
+    margin-bottom: 1em;
+}
+
 svg:hover{
     opacity: 0.85;
 }
