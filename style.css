@@ -155,6 +155,7 @@ a{
 
 .project__tag{
     display: flex;
+    align-items: flex-start;
 }
 
 .project__year{
@@ -165,8 +166,28 @@ a{
     border-radius: 30px;
 }
 
+.project__website{
+    margin-right: 2.5em;
+}
+
+.project__link{
+    margin-right: 1em;
+    padding: 0em .85em;
+    background: var(--primary);
+    color: white;
+    font-weight: var(--medium);
+    text-align: center;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.project__link:hover{
+    opacity: 0.75;
+}
+
 .project__sub--title{
     color: var(--tertiary);
+    margin-right: 1em;
 }
 
 .footer{
@@ -198,6 +219,28 @@ svg:hover{
         max-width: 210px;
         margin-right: 1.5em;
     }
+
+    .project__sub--title{
+        margin-right: 1em;
+    }
+
+    .project__website{
+        margin-right: 2.5em;
+    }
+
+    .project__link{
+        margin-right: 1em;
+        padding: 0em .85em;
+        background: var(--primary);
+        color: white;
+        font-weight: var(--medium);
+        border-radius: 30px;
+        cursor: pointer;
+    }
+
+    .project__link:hover{
+        opacity: 0.75;
+    }
 }
 
 
@@ -209,10 +252,9 @@ svg:hover{
         justify-content: end;
     }
 
-    .hero__wrapper .col{
-    }
-
-    .hero__img{
+    .hero__content__wrapper{
+        width: 60%;
+        padding-right: 1em;
     }
 
     .upper__text{
@@ -220,9 +262,9 @@ svg:hover{
     }
 
     .hero__content{
-        text-align: initial;
+        text-align: left;
         margin-left: 1.3em;
-        max-width: 50%;
+        /*max-width: 50%;*/
     }
 
     .hero__content h1,p{
@@ -242,7 +284,38 @@ svg:hover{
 
     .info__project{
         max-width: 800px;
-        margin: 0 auto;
+        margin: 1.5em auto;
+        border-bottom: 1px solid var(--tertiary-lines);
+    }
+
+    /*COSO DE SURA MI MADRE XD 
+    ontactanos via inbox y con gusto de ayudamos
+
+    Soy asesor de SURA, te ayudo a cambiarte de afore y diseñar planes de ahorro de corto, mediano y largo plazo.
+
+    Servicios: Expediente electronico,estado de cuenta cuatrimestral, asesoria de pensiones, regimen '73 '93, aportaciones voluntarias y beneficio fiscal.
+    */
+
+    .project__sub--title{
+        margin-right: 1em;
+    }
+
+    .project__website{
+        margin-right: 2.5em;
+    }
+
+    .project__link{
+        margin-right: 1em;
+        padding: 0em .85em;
+        background: var(--primary);
+        color: white;
+        font-weight: var(--medium);
+        border-radius: 30px;
+        cursor: pointer;
+    }
+
+    .project__link:hover{
+        opacity: 0.75;
     }
 
 }
