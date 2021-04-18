@@ -1,0 +1,185 @@
+:root{
+    --primary: #FF6464;
+    --secondary: #142850;
+    --tertiary: #8695A4;
+    --tertiary-lines: #E0E0E0;
+    --background: #EDF7FA;
+
+    /*Typography*/
+    --heebo:'Heebo', sans-serif;
+
+    /*Font weight*/
+    --regular: 400;
+    --medium: 500;
+    --bold: 700;
+    --black: 900;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--heebo);
+}
+
+img{
+    max-width: 100%;
+}
+
+h1{
+    font-weight: var(--bold);
+    color: var(--secondary);
+}
+
+p{
+    line-height: 24px;
+    font-weight: var(--regular);
+}
+
+a{
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.nav{
+    padding: 1em;
+    margin-bottom: 2em;
+    font-weight: var(--medium);
+}
+
+.nav__list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+.nav__item + .nav__item{
+    padding-left: 1em;
+}
+
+.nav__item:hover{
+    opacity: 0.75;
+}
+
+.hero__img{
+    margin: 0 auto;
+    width: 50%;
+}
+
+.hero__content{
+    text-align: center;
+}
+
+.hero__content h1{
+    margin: .5em 0em;
+}
+
+.hero__content p{
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    color: var(--secondary);
+}
+
+.hero__btn{
+    /*margin: 2em 0em; No effect?*/
+    margin: 1em 0em;
+    background: var(--primary);
+    outline: none;
+    border: none;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.hero__btn a{
+    color: white;
+    font-weight: var(--medium);
+}
+
+.hero__btn:hover{
+    opacity: 0.75;
+}
+
+.recent__post{
+    background: var(--background);
+    margin: 2em 0em;
+    text-align: center;
+}
+
+/*
+    I don't know what to add in this section
+    By this section I mean [Recent Posts]
+*/
+
+.personal__project{
+    margin-bottom: 5em;
+}
+
+.title__project{
+    text-align: center;
+    font-size: 1.125rem;
+    letter-spacing: 3px;
+    color: var(--secondary);
+    font-weight: var(--medium);
+}
+
+.info__project{
+    margin: .9em 1.3em 1.3em 1.3em;
+    border-bottom: 1px solid var(--tertiary-lines);
+}
+
+.info__img{
+    border-radius: 5px;
+    margin-bottom: .4em;
+}
+
+.info__project .col > h2,p{
+    margin: .3em 0em;
+}
+
+.project__title, 
+.project__content{
+    color: var(--secondary);
+    margin-top: 1em;
+}
+
+.project__content{
+    margin-bottom: 1em;
+}
+
+.project__tag{
+    display: flex;
+}
+
+.project__year{
+    margin-right: 1em;
+    padding: 0em .85em;
+    background: var(--secondary);
+    color: white;
+    border-radius: 30px;
+}
+
+.project__sub--title{
+    color: var(--tertiary);
+}
+
+.footer{
+    color: var(--secondary);
+    text-align: center;
+}
+
+.footer .col{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1em;
+}
+
+svg:hover{
+    opacity: 0.85;
+}
