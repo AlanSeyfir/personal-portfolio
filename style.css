@@ -183,3 +183,66 @@ a{
 svg:hover{
     opacity: 0.85;
 }
+
+@media (min-width: 550px){
+
+    .hero__img{
+        max-width: 330px;
+    }
+
+    .info__project{
+        display: flex;
+    }
+
+    .info__project img{
+        max-width: 210px;
+        margin-right: 1.5em;
+    }
+}
+
+
+@media (min-width: 880px){
+    .hero__wrapper{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .hero__wrapper .col{
+    }
+
+    .hero__img{
+    }
+
+    .upper__text{
+        color: var(--background);
+    }
+
+    .hero__content{
+        text-align: initial;
+        margin-left: 1.3em;
+        max-width: 50%;
+    }
+
+    .hero__content h1,p{
+        margin: 0;
+    }
+
+    .hero__content p{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .hero__img{
+        margin: 0 5em 0 0;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .info__project{
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+}
