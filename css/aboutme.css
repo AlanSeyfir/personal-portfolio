@@ -30,6 +30,10 @@ img{
     color: var(--secondary);
 }
 
+.hero__content p{
+    line-height: 2em;
+}
+
 .tech__know{
     color: var(--primary);
     font-weight: var(--bold);
@@ -41,6 +45,7 @@ img{
 }
 
 @media (min-width: 320px) {
+
     .footer{
         margin-top: 3em;
     }
@@ -50,10 +55,19 @@ img{
     .hero__wrapper{
         flex-direction: initial;
         justify-content: center;
-        margin: 13em auto;
+        margin: 4em auto 13em auto;
     }
 
-    .hero__wrapper p{
-        text-align: justify;
+    .hero__content{
+        margin-left: 4em;
+        font-size: 1.3rem;
+    }
+
+    .hero__content p{
+        line-height: 2em;
+    }
+
+    .hero__img{
+        max-width: 600px;
     }
 }
