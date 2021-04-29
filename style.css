@@ -106,10 +106,39 @@ a{
     opacity: 0.75;
 }
 
-.recent__post{
+.skills__section{
     background: var(--background);
     margin: 2em 0em;
     text-align: center;
+}
+
+.skills__title{
+    font-size: 2rem;
+    color: var(--secondary);
+    padding-top: 1em;
+}
+
+.skills__icon{
+    max-width: 150px;
+    margin: 2em 2em 2em 2em;
+}
+
+.skills__flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills__text{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 2em;
+}
+
+.skills__text p{
+    font-weight: var(--bold);
+    color: var(--secondary);
 }
 
 /*
