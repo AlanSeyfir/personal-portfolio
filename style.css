@@ -106,10 +106,19 @@ a{
     opacity: 0.75;
 }
 
+svg{
+    max-width: 100%;
+}
+
 .skills__section{
     background: var(--background);
     margin: 2em 0em;
     text-align: center;
+}
+
+.skills__container{
+    margin: 0 auto;
+    padding-bottom: 2em;
 }
 
 .skills__title{
@@ -125,8 +134,10 @@ a{
 
 .skills__flex{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 1em auto;
 }
 
 .skills__text{
@@ -257,6 +268,17 @@ svg:hover{
         margin-right: 1.5em;
     }
 
+    .skills__flex{
+        margin: 0 3em;
+    }
+
+    .skills__icon{
+        align-items: center;
+        justify-content: center;
+        justify-self: center;
+        justify-items: center;
+    }
+
     .project__sub--title{
         margin-right: 1em;
     }
@@ -317,6 +339,17 @@ svg:hover{
         margin: 0 5em 0 0;
         width: 100%;
         max-width: 300px;
+    }
+
+    .skills__flex{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(160px, 1fr));
+        
+    }
+    .skills__flex > img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .info__project{
